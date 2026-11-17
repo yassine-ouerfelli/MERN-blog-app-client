@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# MERN Blog — Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React front end of a full-stack blogging platform. Users can sign up, confirm their email, log in (email/password or Google), write and edit posts, and save posts to their favourites.
 
-## Available Scripts
+**Back end:** [MERN-blog-app-server](https://github.com/yassine-ouerfelli/MERN-blog-app-server)
 
-In the project directory, you can run:
+## Features
+- Registration with email confirmation
+- Login with email/password or Google sign-in
+- Forgot-password flow with a reset link sent by email
+- Create, read and edit blog posts
+- Save posts to a personal favourites list
+- Global user state with Redux
 
-### `npm start`
+## Tech stack
+React · Redux · React Router · Axios · Material UI · Tailwind CSS · Bootstrap
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Getting started
+```bash
+git clone https://github.com/yassine-ouerfelli/MERN-blog-app-client.git
+cd MERN-blog-app-client
+npm install
+```
+Create a `.env` file with your Google OAuth client ID:
+```
+REACT_APP_GOOGLE_ID=your-google-client-id
+```
+Then start the dev server (the API must be running too):
+```bash
+npm start
+```
+The app runs on http://localhost:3000.
